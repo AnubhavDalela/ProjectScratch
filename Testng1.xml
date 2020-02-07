@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DemoXmlFileCreation" verbose="1" >
+
+    <test name="Demoxml" >
+        <classes>
+            <class name="TestClasses.GloOpen" />
+        </classes>
+    </test>
+
+</suite>
