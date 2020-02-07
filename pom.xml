@@ -7,8 +7,25 @@
     <groupId>ProjectScratch</groupId>
     <artifactId>ProjectScratch</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <suiteXmlFile>src/main/resources/Testng1.xml</suiteXmlFile>
+        <skipTests>false</skipTests>
+    </properties>
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+
+                </configuration>
+            </plugin>
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
